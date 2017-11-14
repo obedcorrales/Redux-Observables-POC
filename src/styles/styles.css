@@ -1,0 +1,40 @@
+.app {
+    background-color: #F0F0F0;    
+    padding: 20px;
+    min-width: 325px;
+}
+
+.menuBar {
+    min-width: 365px;
+}
+
+.mainGridRoot {
+    flex-grow: 1;
+    margin-top: 30px;
+    min-width: 325px;
+}
+
+.mainGridItem {
+    width: 325px;
+    max-width: 325px;
+}
+
+.album {
+    margin: 2px;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 100%;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+
+.photoFrame {
+    margin: 5px;
+    padding: 5px;
+    border-width: 2px;
+    border-style: solid;
+    /* line-height: 170px; */
+    width: 250px;
+    /* height: 170px; */
+}
