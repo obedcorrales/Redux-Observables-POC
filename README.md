@@ -1,3 +1,29 @@
+# Redux Observables Proof of Concept
+
+This is a POC that aims at putting together a powerful stack to develop React Apps.
+
+It consists of 3 exercises which are meant to give us a feel at Async Operations.
+
+The **Ping Pong** exercises both use Redux, but one goes through a Function which has to be called directly in order to handle Actions, while the other uses the power of Redux-Observables to catch Action calls through a store middleware in order to handle the flow.
+
+The **last exercise is an implementation of the following exercise**:
+
+A site showing the 3 most recent photo albums is required.
+From each album the last two photographs should be displayed.
+
+Taking into account that the greater id indicates that it is newer than a smaller id.
+
+In the container you must show the title and the image. The photo container must have a color border according to the album.
+
+Albumin-color criterion:
+Border 1 border: Green.
+Border 2 border: Blue.
+Albúm 3 border: Purple.
+
+API to get album list: https://jsonplaceholder.typicode.com/photos
+
+
+
 # React Slingshot
 
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/3129129/22811426/bb69dc06-ef0c-11e6-8092-a0bea9060b35.png"/></p>
