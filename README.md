@@ -2,7 +2,7 @@
 
 This is a POC that aims at putting together a powerful stack to develop React Apps.
 
-It consists of 3 exercises which are meant to give us a feel at Async Operations.
+It consists of 3 exercises which are meant to give us a feel for Async Operations.
 
 The **Ping Pong** exercises both use Redux, but one goes through a Function which has to be called directly in order to handle Actions, while the other uses the power of Redux-Observables to catch Action calls through a store middleware in order to handle the flow.
 
