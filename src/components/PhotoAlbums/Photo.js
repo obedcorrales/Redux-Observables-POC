@@ -9,7 +9,7 @@ const Photo = ({ colorClass, photo }) => {
             <img src={photo.thumbnailUrl} alt={photo.title} />
             <GridListTileBar
                 title={photo.title}
-                subtitle={<span>id: <a href={photo.url}>{photo.id}</a></span>}
+                subtitle={<span>id: <a href={photo.url} style={{ color: "#a5bdff" }}>{photo.id}</a></span>}
             />
         </GridListTile>
     );
