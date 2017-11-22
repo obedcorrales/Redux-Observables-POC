@@ -33,7 +33,7 @@ const MainCard = ({title, subTitle, imageUrl, description, link, maxWidth, class
                 <Button dense color="primary">{link}</Button>
             </CardActions>
             <CardContent>
-                <Typography component="p">
+                <Typography component="div">
                 {description}
                 </Typography>
             </CardContent>
