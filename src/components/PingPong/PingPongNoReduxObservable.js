@@ -28,15 +28,13 @@ const PingPongNoReduxObservable = ({isPinging}) => {
                             <p style={{fontStyle: "italic"}}>
                                 The Async operation takes <span style={{ fontWeight: 900 }}>3</span> seconds, as described in the <span style={{ fontWeight: 600 }}>pingEpic</span>.
                             </p>
-                            <p>
-                                <ul>
-                                    <li>The <span style={{ fontWeight: 900 }}>Ping</span> Function is <span style={{ fontWeight: 900 }}>called</span> on click</li>
-                                    <li><span style={{ fontWeight: 900 }}>Ping</span> Function dispatches <span style={{ fontWeight: 900 }}>pingAction</span> Action (using React-Act)</li>
-                                    <li><span style={{ fontWeight: 900 }}>pingAction</span> Action goes through reducer to <span style={{ fontWeight: 900 }}>set the isPinging flag to true</span></li>
-                                    <li>On Return of Promise, <span style={{ fontWeight: 900 }}>Ping</span> Function dispatches <span style={{ fontWeight: 900 }}>pong</span> action</li>
-                                    <li><span style={{ fontWeight: 900 }}>pong</span> Action goes through reducer to <span style={{ fontWeight: 900 }}>reset the isPinging flag back to false</span></li>
-                                </ul>
-                            </p>
+                            <ul>
+                                <li>The <span style={{ fontWeight: 900 }}>Ping</span> Function is <span style={{ fontWeight: 900 }}>called</span> on click</li>
+                                <li><span style={{ fontWeight: 900 }}>Ping</span> Function dispatches <span style={{ fontWeight: 900 }}>pingAction</span> Action (using React-Act)</li>
+                                <li><span style={{ fontWeight: 900 }}>pingAction</span> Action goes through reducer to <span style={{ fontWeight: 900 }}>set the isPinging flag to true</span></li>
+                                <li>On Return of Promise, <span style={{ fontWeight: 900 }}>Ping</span> Function dispatches <span style={{ fontWeight: 900 }}>pong</span> action</li>
+                                <li><span style={{ fontWeight: 900 }}>pong</span> Action goes through reducer to <span style={{ fontWeight: 900 }}>reset the isPinging flag back to false</span></li>
+                            </ul>
                         </div>}
                     link={<Button raised color="accent" onClick={() => Ping()}>Start PING</Button>} />
             </Grid>

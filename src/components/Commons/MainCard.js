@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
 
-import { Card, CardHeader, CardContent, CardActions, CardMedia, Avatar, Button, Typography } from "material-ui";
+import { Card, CardHeader, CardContent, CardActions, CardMedia, Avatar, Typography } from "material-ui";
 import { red } from 'material-ui/colors';
 
 import { withStyles } from 'material-ui/styles';
@@ -30,7 +30,7 @@ const MainCard = ({title, subTitle, imageUrl, description, link, maxWidth, class
                 subheader={subTitle}/>
             <CardMedia className={classes.media} image={imageUrl} title={title} />
             <CardActions>
-                <Button dense color="primary">{link}</Button>
+                {link}
             </CardActions>
             <CardContent>
                 <Typography component="div">
@@ -45,10 +45,10 @@ MainCard.propTypes = {
     title: PropTypes.string.isRequired,
     subTitle: PropTypes.string.isRequired,
     imageUrl: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
+    description: PropTypes.object.isRequired,
     link: PropTypes.object.isRequired,
     classes: PropTypes.object.isRequired,
-    maxWidth: PropTypes.number
+    maxWidth: PropTypes.string
 };
 
 export default withStyles(styles)(MainCard);

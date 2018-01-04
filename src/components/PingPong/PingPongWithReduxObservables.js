@@ -28,15 +28,13 @@ const PingPong = ({isPinging}) => {
                             <p style={{fontStyle: "italic"}}>
                                 The Async operation takes <span style={{ fontWeight: 900 }}>1</span> seconds, as described in the <span style={{ fontWeight: 600 }}>pingEpic</span>.
                             </p>
-                            <p>
-                                <ul>
-                                    <li>The <span style={{ fontWeight: 900 }}>ping</span> Action is <span style={{ fontWeight: 900 }}>dispatched</span> on click (using React-Act)</li>
-                                    <li>Action goes through reducer to <span style={{ fontWeight: 900 }}>set the isPinging flag to true</span></li>
-                                    <li>Action is <span style={{ fontWeight: 900 }}>caught by the Redux-Observable epic</span> middleware in the store</li>
-                                    <li><span style={{ fontWeight: 900 }}>Epic dispatches pong Action</span> after 1 second</li>
-                                    <li><span style={{ fontWeight: 900 }}>pong</span> Action goes through reducer to <span style={{ fontWeight: 900 }}>reset the isPinging flag back to false</span></li>
-                                </ul>
-                            </p>
+                            <ul>
+                                <li>The <span style={{ fontWeight: 900 }}>ping</span> Action is <span style={{ fontWeight: 900 }}>dispatched</span> on click (using React-Act)</li>
+                                <li>Action goes through reducer to <span style={{ fontWeight: 900 }}>set the isPinging flag to true</span></li>
+                                <li>Action is <span style={{ fontWeight: 900 }}>caught by the Redux-Observable epic</span> middleware in the store</li>
+                                <li><span style={{ fontWeight: 900 }}>Epic dispatches pong Action</span> after 1 second</li>
+                                <li><span style={{ fontWeight: 900 }}>pong</span> Action goes through reducer to <span style={{ fontWeight: 900 }}>reset the isPinging flag back to false</span></li>
+                            </ul>
                         </div>}
                     link={<Button raised color="accent" onClick={() => ping()}>Start PING</Button>} />
             </Grid>

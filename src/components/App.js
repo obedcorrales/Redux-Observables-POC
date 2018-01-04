@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { Route, Link, Switch, withRouter } from "react-router-dom";
 
-import { Grid, AppBar, Toolbar, IconButton } from "material-ui";
+import { Grid, AppBar, Toolbar, IconButton, Button } from "material-ui";
 import { HomeIcon } from "./Commons/Icons";
 
 import MainCard from "./Commons/MainCard";
@@ -42,15 +42,15 @@ class App extends React.Component {
                                             <MainCard title="Ping Pong"
                                                 subTitle="Async Operations"
                                                 imageUrl="../images/pingpong.gif"
-                                                description="Simple Async Operations implemented through two different approaches in Redux"
-                                                link={<Link to="/pingpong">Learn More</Link>} />
+                                                description={<span>Simple Async Operations implemented through two different approaches in Redux</span>}
+                                                link={<Button dense color="primary"><Link to="/pingpong">Learn More</Link></Button>} />
                                         </Grid>
                                         <Grid item className="mainGridRoot">
                                             <MainCard title="Fetching Photos"
                                                 subTitle="Async Operations"
                                                 imageUrl="../images/image-grid.png"
-                                                description="Fetch photo albums from external API using Redux-Observables"
-                                                link={<Link to="/photoalbum">Learn More</Link>} />
+                                                description={<span>Fetch photo albums from external API using Redux-Observables</span>}
+                                                link={<Button dense color="primary"><Link to="/photoalbum">Learn More</Link></Button>} />
                                         </Grid>
                                     </Grid>
                                 </div>
